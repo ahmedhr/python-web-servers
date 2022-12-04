@@ -1,0 +1,11 @@
+[Unit]
+Description=sanic instance to serve myproject
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/home/ahmed/_projects/web_server_understanding/sanic_app
+Environment="PATH=/home/ahmed/_projects/web_server_understanding/venv/bin"
+ExecStart=/home/ahmed/_projects/web_server_understanding/venv/bin/python /home/ahmed/_projects/web_server_understanding/sanic_app/uvicorn_sanic_app.py
+Restart=always
+[Install]
+WantedBy=multi-user.target

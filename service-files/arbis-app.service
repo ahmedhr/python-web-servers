@@ -1,0 +1,11 @@
+[Unit]
+Description= arbis myproject
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/home/ahmed/_projects/web_server_understanding/vanilla_app
+Environment="PATH=/home/ahmed/_projects/web_server_understanding/venv/bin"
+ExecStart=/home/ahmed/_projects/web_server_understanding/venv/bin/python /home/ahmed/_projects/web_server_understanding/vanilla_app/my_server.py
+Restart=always
+[Install]
+WantedBy=multi-user.target

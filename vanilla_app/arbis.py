@@ -27,4 +27,4 @@ async def app(scope, receive, send):
 
 
 if __name__ == "__main__":
-    uvicorn.run("my_server:app", port=5001, log_level="info")
+    uvicorn.run("arbis:app", port=5001, log_level="info")

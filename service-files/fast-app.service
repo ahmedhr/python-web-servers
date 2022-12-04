@@ -1,0 +1,11 @@
+[Unit]
+Description= Fast api myproject
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/home/ahmed/_projects/web_server_understanding/fastapi_app
+Environment="PATH=/home/ahmed/_projects/web_server_understanding/venv/bin"
+ExecStart=/home/ahmed/_projects/web_server_understanding/venv/bin/python /home/ahmed/_projects/web_server_understanding/fastapi_app/my_server.py
+Restart=always
+[Install]
+WantedBy=multi-user.target
