@@ -1,0 +1,4 @@
+fastapi==0.88.0
+sanic==22.9.1
+uvicorn==0.20.0
+wheel==0.38.4
